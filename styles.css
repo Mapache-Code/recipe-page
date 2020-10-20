@@ -1,0 +1,292 @@
+@media only screen and (min-width: 320px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  h3 {
+    margin: 0.2em 0 0.8em;
+    font-style: 16px;
+    font-weight: 400;
+    font-style: italic;
+  }
+
+  .Container {
+    padding: 0.8em;
+  }
+
+  .Footer {
+    height: 100px;
+    position: relative;
+    text-align: center;
+  }
+
+  .Footer a {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: #a9a9a9;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  /* --------------RECIPE-------------- */
+  .Recipe > img {
+    width: 100%;
+  }
+
+  .Description {
+    margin: 0.4em 0 1.4em;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+  }
+
+  .Description img {
+    margin: 0.2em 0.8em 0 0;
+  }
+
+  .Description p {
+    color: #4f4f4f;
+    font-size: 12px;
+    font-weight: 500;
+    font-style: italic;
+  }
+
+  .Info {
+    margin: 0.6em 0 1.2em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+  }
+
+  .Info div:nth-child(1) {
+    grid-column: 1 / 4;
+  }
+
+  .Info > div {
+    margin-top: 0.6em;
+  }
+
+  .Info div {
+    display: flex;
+    align-items: center;
+    color: #333333;
+  }
+
+  .Info div > div {
+    margin-left: 0.2em;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .Info div:nth-child(1) > i,
+  .Info div:nth-child(1) > div span:nth-child(2) {
+    color: #f2994a;
+  }
+
+  .Info div > div span:nth-child(1) {
+    color: #bdbdbd;
+    font-size: 8px;
+    font-weight: bold;
+  }
+
+  .Info div > div span:nth-child(2) {
+    color: #333333;
+    font-size: 10px;
+    font-weight: 500;
+  }
+
+  .ItemsBox {
+    margin: 1.2em 0 2em;
+  }
+
+  .Item {
+    margin: 0.8em 0;
+    display: grid;
+    grid-template-columns: 28px 1fr;
+  }
+
+  input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+  }
+
+  input[type="checkbox"]:checked + label {
+    text-decoration: line-through;
+  }
+
+  .Item label {
+    font-size: 14px;
+    line-height: 26px;
+  }
+
+  /* --------------INSTRUCTIONS-------------- */
+  .Detail {
+    margin: 1.6em 0;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .Detail div {
+    background-color: #f2994a;
+    width: 36px;
+    height: 36px;
+    margin-right: 1em;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+  }
+
+  .Detail div span {
+    color: #ffffff;
+    font-family: "Playfair Display", serif;
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  .Detail p {
+    color: #000000;
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .Instructions a {
+    color: #bdbdbd;
+    font-size: 12px;
+    font-style: italic;
+    text-decoration: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .Container {
+    padding: 2em 4em;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-style: 18px;
+  }
+
+  .Description p {
+    width: 80%;
+    font-size: 14px;
+  }
+
+  .Info > div {
+    margin-top: 1.2em;
+  }
+
+  .Info div > div {
+    margin-left: 0.4em;
+  }
+
+  .Info div > div span:nth-child(1) {
+    font-size: 10px;
+  }
+
+  .Info div > div span:nth-child(2) {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .Container {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  h1 {
+    font-size: 48px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  h3 {
+    margin: 2em 0 1.8em;
+    font-style: 18px;
+  }
+
+  .Description p {
+    width: 58%;
+  }
+
+  .Box {
+    margin-top: 2.8em;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .Box > div:nth-child(2) {
+    width: 54%;
+  }
+
+  .Info {
+    margin: 0;
+    padding: 0 2em;
+    display: initial;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 12px;
+  }
+
+  .Info > div {
+    margin: 2em 0;
+    width: 140px;
+  }
+
+  .Info div > i {
+    margin-right: 0.2em;
+    font-size: 32px;
+  }
+
+  .Item {
+    grid-template-columns: 32px 1fr;
+  }
+
+  .Item label {
+    font-size: 16px;
+  }
+
+  .Instructions h1 {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (min-width: 2560px) {
+  .Container {
+    width: 1440px;
+  }
+}
